@@ -6,7 +6,7 @@
 #include "./SortingFunction.h"
 #include "./PrintTable.h"
 
-// Função que calcula o tempo de execução dos processos no algoritmo PPS
+// Função que calcula o tempo de execução dos processos no algoritmo FCFS
 void fcfs_calculate_time(Process *process, int process_count)   // Recebe como parametro o ponteiro de processos e a quantidade de processo
 {
     int i;
@@ -125,10 +125,7 @@ void FCFS(Process *process, int process_count)
     printf("\tAverage Turnaround Time  : %-2.2lf\n", (double)total_turnaround_time / (double)process_count);
     printf("\tAverage Response Time    : %-2.2lf\n\n", (double)total_response_time / (double)process_count);
 
-    print_table(process, process_count);
-
-
-        
+    print_table(process, process_count);     
 }
 
 #endif
